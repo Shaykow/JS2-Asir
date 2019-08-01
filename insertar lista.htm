@@ -1,0 +1,38 @@
+<html>
+
+<head>
+<script>
+function mas(){
+//Coger el contenido del cuadro de texto;
+var texto=document.getElementById("nombre");
+
+//Coger el nodo delante del cual vamos a insertar
+  var n2=document.getElementById("primero");
+
+// Creamos nuevo nodo
+  var n1 = document.createElement("p");
+
+//Creamos un texto con el contenido del cuadro de texto  
+  var contenido = document.createTextNode(texto.value);
+  
+//Añadimos el texto al nuevo nodo  
+  n1.appendChild(contenido);
+  
+//Pegamos el nodo en el body en la posición indicada  
+  document.body.insertBefore(n1, n2);
+
+
+}
+</script>
+</head>
+
+<body>
+LISTA DE ALUMNOS<BR><BR>
+<p id="primero">Antonio García </p>
+<p id="segundo">Manuel Carrasco </p>
+
+NOMBRE:<input type="text" id="nombre">
+<input type="button" value="ENVIAR" onClick="mas()">
+
+</body>
+</html>
