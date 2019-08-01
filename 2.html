@@ -1,0 +1,27 @@
+<html>
+<head>
+<script>
+function mail(){
+var a=document.form1.usu.value;
+var b=document.form1.dom.value;
+document.form1.mai.value=a +"@" + b;
+}
+function borra(){
+document.form1.nom.value=" ";
+}
+</script>
+</head>
+<body>
+<CENTER>
+<table bgcolor="aqua" width="40%">
+<form name="form1">
+<tr><td>USUARIO</td><td><input type="text" name="usu" size="20"></td></tr>
+<tr><td>DOMINIO</td><td><input type="text" name="dom" ></td></tr>
+<tr><td><input type="button" value="BORRAR" onclick="borra()"></td><td><input type="button" value="OK" onclick="mail()"></td></tr>
+<tr><td>EMAIL</td><td><input type="text" name="mai" size="50"></td></tr>
+
+</form>
+</table>
+</CENTER>
+</body>
+</html>
